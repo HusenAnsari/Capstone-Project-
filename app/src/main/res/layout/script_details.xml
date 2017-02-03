@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin">
+
+      <TextView
+          android:id="@+id/timestamp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:layout_marginTop="@dimen/activity_vertical_margin"
+          android:textAllCaps="true"
+          android:textSize="16sp"
+          android:textStyle="bold"/>
+      
+      <TextView
+          android:id="@+id/script_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="24sp"/>
+    </LinearLayout>
+  </ScrollView>
+  <com.google.android.gms.ads.AdView
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+      ads:adSize="BANNER"
+      ads:adUnitId="@string/banner_ad_unit_id"
+      android:id="@+id/script_details_banner_ad"
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+  <android.support.design.widget.FloatingActionButton
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/play_fab"
+      android:visibility="gone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@id/script_details_banner_ad"
+      android:layout_alignParentRight="true"
+      android:layout_margin="16dp"
+      android:src="@drawable/play_circle_outline"
+      app:fabSize="normal"/>
+</RelativeLayout>

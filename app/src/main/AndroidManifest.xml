@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.husenansari.theprompter">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".data.ScriptsProvider"
+            android:authorities="@string/content_provider_authority"
+            android:exported="false"/>
+
+        <receiver
+            android:name=".RecentScriptWidgetProvider"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.husenansari.theprompter.RECENT_SCRIPT_UPDATED"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/recent_script_widget"/>
+        </receiver>
+
+        <service
+            android:name=".RecentScriptWidgetProvider$WidgetUpdater"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+        <activity
+            android:name=".AddScriptActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".EditScriptActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".TeleprompterActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/TelePrompter">
+        </activity>
+        <activity android:name=".SearchActivity">
+        </activity>
+    </application>
+
+
+
+</manifest>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">The Prompter</string>
+    <string name="content_provider_authority">com.husenansari.theprompter</string>
+    <string name="no_scripts_available">No scripts available</string>
+    <string name="add_script">Add New Script</string>
+    <string name="script_title">Script Title</string>
+    <string name="script_content">Script Content</string>
+    <string name="save">Save</string>
+    <string name="error_title_length">Title must be atleast 5 characters</string>
+    <string name="error_content_length">Content must be atleast 20 characters</string>
+    <string name="undo">UNDO</string>
+    <string name="edit_script">Edit Script</string>
+    <string name="start_teleprompter">Start Teleprompter</string>
+    <string name="script_details">Script Details</string>
+    <string name="select_item">Select Script from the list to see details</string>
+    <string name="choose_color">Choose Color Scheme</string>
+    <string name="add_dummy_content">Add Dummy Content</string>
+    <string name="return_to_prompter">Return to Prompter</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="no_recent_scripts">No Recent Scripts Used</string>
+    <string name="recent_script_updated">com.husenansari.theprompter.RECENT_SCRIPT_UPDATED</string>
+    <string name="reduce_speed">Reduce Speed</string>
+    <string name="increase_speed">Increase Speed</string>
+    <string name="reduce_size">Reduce Size</string>
+    <string name="increase_size">Increase Size</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="or">OR</string>
+    <string name="search_on_wikisource">Search on WikiSource</string>
+    <string name="search">Search</string>
+    <string name="default_search_value">Obama</string>
+    <string name="search_error">Oops! Something went wrong…</string>
+    <string name="please_wait">Please Wait...</string>
+</resources>

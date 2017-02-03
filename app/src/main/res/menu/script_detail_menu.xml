@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/edit"
+      android:icon="@drawable/mode_edit"
+      android:title="@string/edit_script"
+      app:showAsAction="always"/>
+  <group android:id="@+id/play_item_menu">
+    <item
+        android:id="@+id/play"
+        android:icon="@drawable/play_circle_outline"
+        android:title="@string/start_teleprompter"
+        app:showAsAction="always"/>
+  </group>
+</menu>

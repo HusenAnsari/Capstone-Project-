@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbarSize="2dp">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:scrollbarAlwaysDrawHorizontalTrack="true"
+      android:scrollbars="horizontal">
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemeBlackBg"
+        android:onClick="setScheme"
+        android:tag="black"/>
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemeTealBg"
+        android:onClick="setScheme"
+        android:tag="teal"/>
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemeCyanBg"
+        android:onClick="setScheme"
+        android:tag="cyan"/>
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemeRedBg"
+        android:onClick="setScheme"
+        android:tag="red"/>
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemeIndigoBg"
+        android:onClick="setScheme"
+        android:tag="indigo"/>
+
+    <TextView
+        style="@style/ColorScheme"
+        android:background="@color/schemePurpleBg"
+        android:onClick="setScheme"
+        android:tag="purple"/>
+  </LinearLayout>
+</HorizontalScrollView>

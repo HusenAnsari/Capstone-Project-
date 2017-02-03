@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddScriptActivity">
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:background="@color/colorPrimary"
+      android:elevation="4dp"
+      android:layout_height="?attr/actionBarSize"
+      app:titleTextColor="@color/textPrimary"
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+      app:theme="@style/AppTheme.AppBar"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:paddingEnd="@dimen/activity_horizontal_margin"
+      android:paddingStart="@dimen/activity_horizontal_margin"
+      android:paddingTop="@dimen/activity_vertical_margin">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/script_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <EditText
+          android:id="@+id/script_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/script_title"
+          android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/script_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+      <EditText
+          android:id="@+id/script_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/script_content"
+          android:inputType="textMultiLine"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:text="@string/or"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="launchSearch"
+        android:text="@string/search_on_wikisource"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  </LinearLayout>
+</LinearLayout>
